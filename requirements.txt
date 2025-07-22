@@ -3,7 +3,10 @@ httptools
 pydantic
 python-dotenv
 snac
-tensorrt_llm==0.20.0
+#tensorrt_llm==0.20.0
 uvicorn[standard]
 tqdm
 setuptools
+#vllm==0.9.1
+orjson
+httptools
