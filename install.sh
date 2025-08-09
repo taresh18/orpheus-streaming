@@ -8,5 +8,6 @@ apt-get update && apt-get -y install libopenmpi-dev python3-venv nano htop
 cd /workspace
 git clone https://github.com/taresh18/Orpheus-FastAPI-Streaming.git && cd Orpheus-FastAPI-Streaming
 python3 -m venv orpheus && source orpheus/bin/activate 
+pip install uv && uv pip install vllm --torch-backend=auto
 pip install -r requirements.txt
 chmod +x start.sh && bash -x start.sh
